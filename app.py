@@ -25,7 +25,7 @@ from fastai.vision.widgets import *
 #print(os.getcwd())
 filenames = next(os.walk(os.getcwd()), (None, None, []))[2]
 print(filenames)
-model_file_path = os.path.join(os.getcwd(),'export.pkl')
+model_file_path = os.path.join(os.getcwd(),'model.pkl')
 print(model_file_path)
 model_inf = load_learner(model_file_path)
 
