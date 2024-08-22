@@ -23,10 +23,11 @@ from fastai.vision.widgets import *
 #path = Path()
 #path.ls(file_exts='.pkl')
 #print(os.getcwd())
-#filenames = next(os.walk(os.getcwd()), (None, None, []))[2]
-#print(filenames)
-
-model_inf = load_learner(os.path.join(os.getcwd(),'export.pkl'))
+filenames = next(os.walk(os.getcwd()), (None, None, []))[2]
+print(filenames)
+model_file_path = os.path.join(os.getcwd(),'export.pkl')
+print(model_file_path)
+model_inf = load_learner(model_file_path)
 
 WIDTH = 48
 HEIGHT = 48
