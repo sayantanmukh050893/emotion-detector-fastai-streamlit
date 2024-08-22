@@ -20,9 +20,9 @@ from fastai.vision.widgets import *
 # loaded_model.load_weights("weights.h5")
 
 # loading fastai model
-path = Path()
-path.ls(file_exts='.pkl')
-model_inf = load_learner(path/'export.pkl')
+#path = Path()
+#path.ls(file_exts='.pkl')
+model_inf = load_learner('export.pkl')
 
 WIDTH = 48
 HEIGHT = 48
